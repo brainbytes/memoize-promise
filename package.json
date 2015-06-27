@@ -1,6 +1,6 @@
 {
   "name": "memoize-promise",
-  "version": "0.2.1",
+  "version": "0.0.1",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -11,11 +11,10 @@
     "url": "https://github.com/brainbytes/memoize-promise"
   },
   "keywords": [
-    "flux",
-    "es6",
-    "datastore",
-    "store",
-    "immutable"
+    "memoize",
+    "promise",
+    "network",
+    "caching"
   ],
   "author": "Benjamin Cochrane",
   "license": "MIT",
