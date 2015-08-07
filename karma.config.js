@@ -27,10 +27,6 @@ module.exports = function(config) {
       module: {
         loaders: [
           {
-            test: /\.js?$/,
-            loaders: ['babel-loader'],
-            exclude: path.join(__dirname, 'node_modules')
-          }, {
             test: /\.json$/,
             loaders: ['json-loader']
           }
@@ -40,10 +36,10 @@ module.exports = function(config) {
     reporters: ['progress'],
     port: 9876,
     colors: true,
-    logLevel: config.INFO,
+    logLevel: config.DEBUG,
     autoWatch: true,
     browsers: win ? ['PhantomJS', 'Chrome', 'IE', 'Firefox'] : ['PhantomJS', 'Chrome', 'Safari', 'Firefox'],
-    singleRun: false
+    singleRun: true
   });
 };
 

@@ -23,13 +23,11 @@
   },
   "homepage": "https://github.com/brainbytes/memoize-promise",
   "devDependencies": {
-    "babel": "^5.2.15",
-    "babel-core": "^5.1.13",
-    "babel-loader": "^5.0.0",
-    "babel-runtime": "^5.2.15",
     "chai": "^2.3.0",
-    "coffee-script": "^1.9.2",
-    "es6-promise": "^2.3.0",
+    "chai-as-promised": "^5.0.0",
+    "chai-immutable": "^0.3.0",
+    "chai-spies": "^0.6.0",
+    "json-loader": "^0.5.1",
     "karma": "^0.12.31",
     "karma-chrome-launcher": "^0.1.8",
     "karma-firefox-launcher": "^0.1.4",
@@ -37,8 +35,9 @@
     "karma-mocha": "^0.1.10",
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-safari-launcher": "^0.1.1",
-    "karma-webpack": "^1.5.0",
+    "karma-webpack": "^1.7.0",
     "mocha": "^2.2.4",
-    "webpack": "^1.8.11"
+    "es6-promise": "^2.3.0",
+    "webpack": "^1.11.0"
   }
 }

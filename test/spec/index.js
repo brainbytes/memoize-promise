@@ -1,3 +1,4 @@
+
 require('es6-promise').polyfill();
 
 var memoize = require('../../src');
