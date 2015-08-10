@@ -5,11 +5,11 @@ module.exports = function memoize( fn, delay ) {
     var hash = "";
     var i = args.length;
     var currentArg = null;
+    fn.memoize || (fn.memoize = {});
     while (i--) {
       currentArg = args[i];
       hash += (currentArg === Object(currentArg)) ?
       JSON.stringify(currentArg) : currentArg;
-      fn.memoize || (fn.memoize = {});
     }
     if (!(hash in fn.memoize)) {
       function clearMemo(hash) {
