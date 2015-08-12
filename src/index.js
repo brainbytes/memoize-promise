@@ -28,6 +28,6 @@ module.exports = function memoize( fn, delay ) {
 
 module.exports.withDelay = function spawn(delay) {
   return function(fn) {
-    return memoize(fn, delay);
+    return module.exports(fn, delay);
   }
 }
