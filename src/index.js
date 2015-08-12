@@ -25,3 +25,9 @@ module.exports = function memoize( fn, delay ) {
     return fn.memoize[hash];
   };
 };
+
+module.exports.withDelay = function spawn(delay) {
+  return function(fn) {
+    return memoize(fn, delay);
+  }
+}
